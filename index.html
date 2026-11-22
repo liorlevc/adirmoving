@@ -182,6 +182,9 @@ p{margin:0}
 @media (min-width:900px){.split{grid-template-columns:1fr 1fr;gap:56px}.split.rev > :first-child{order:2}}
 .split-img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;max-width:100%;position:relative}
 .split-img img{width:100%;height:100%;object-fit:cover}
+.split-vid{display:grid;gap:8px}.split-vid.wide{max-width:960px;margin-inline:auto}
+.wh-video{width:100%;aspect-ratio:16/9;border-radius:var(--r);background:#000;display:block;box-shadow:var(--shadow)}
+.vid-cap{font-size:.85rem;color:var(--muted);text-align:center}
 .checks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .checks li{display:flex;gap:10px;align-items:flex-start}
 .checks li .ico{color:var(--ok);margin-top:3px;width:20px;height:20px}
@@ -529,7 +532,7 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
 
   <div class="section">
     <div class="wrap split">
-      <div class="split-img"><img src="img/units.webp" alt="שורת יחידות אחסון עם דלתות צהובות" loading="lazy"></div>
+      <div class="split-vid"><video class="wh-video" controls playsinline preload="none" poster="img/warehouse_poster.webp"><source src="img/warehouse.mp4" type="video/mp4">הדפדפן שלכם לא תומך בניגון וידאו.</video><p class="vid-cap">סיור במחסן שלנו ליד ראש העין</p></div>
       <div class="stack">
         <span class="eyebrow">אחסנה</span>
         <h2>בין דירה לדירה? התכולה אצלנו.</h2>
@@ -691,6 +694,13 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
     </div>
   </div>
   <div class="tape-band" aria-hidden="true"></div>
+
+  <div class="section" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">סיור במחסן</span><h2>ככה נשמרת התכולה שלכם</h2><p class="lead">מבנה סגור ומאובטח, מערכות גילוי אש, מצלמות ואזעקה 24/7. צפו בסרטון הקצר.</p></div>
+      <div class="split-vid wide"><video class="wh-video" controls playsinline preload="none" poster="img/warehouse_poster.webp"><source src="img/warehouse.mp4" type="video/mp4">הדפדפן שלכם לא תומך בניגון וידאו.</video></div>
+    </div>
+  </div>
 
   <div class="section">
     <div class="wrap">
