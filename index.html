@@ -166,6 +166,10 @@ p{margin:0}
 .svc-img img{width:100%;height:100%;object-fit:cover}
 .svc-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
 .svc-body p{color:var(--muted)}
+.svc-tag{align-self:flex-start;font-weight:700;font-size:.92rem;padding:5px 12px;border-radius:999px;background:rgba(43,181,217,.14);color:var(--ink)}
+.svc-feats{list-style:none;margin:4px 0 0;padding:12px 0 0;border-top:1px solid rgba(22,32,43,.1);display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.svc-feats li{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;font-size:.78rem;line-height:1.25;color:var(--ink);font-weight:600}
+.svc-feats .ico{width:26px;height:26px;color:var(--blue,#1E6FE6)}
 .svc-link{margin-top:auto;font-weight:600;display:inline-flex;align-items:center;gap:6px;padding-top:8px}
 .svc-link .ico{width:18px;height:18px;transform:scaleX(-1)}
 
@@ -503,8 +507,7 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
       </div>
       <div class="svc-grid">
         <a class="svc" href="#moving">
-          <div class="svc-img"><img src="img/truck.webp" alt="משאית הובלה מול בניין מגורים" loading="lazy"></div>
-          <div class="svc-body"><h3>הובלות דירה</h3><p>הובלות דירות בכל גודל - מדירות סטודיו ועד בתים פרטיים, מעבר דירה חלק ובטוח, עם צוות מקצועי, ציוד מתקדם וליווי אישי לכל אורך הדרך.</p><span class="svc-link">לפרטים על הובלות <svg class="ico"><use href="#i-arrow"/></svg></span></div>
+          <div class="svc-body"><h3>הובלות דירה</h3><span class="svc-tag">ליווי אישי לכל אורך הדרך</span><p>הובלות דירות בכל גודל - מדירות סטודיו ועד בתים פרטיים, מעבר דירה חלק ובטוח, עם צוות מקצועי וציוד מתקדם.</p><ul class="svc-feats"><li><svg class="ico"><use href="#i-box"/></svg><span>אריזה והגנה על הרהיטים</span></li><li><svg class="ico"><use href="#i-tools"/></svg><span>פירוק והרכבה מקצועיים</span></li><li><svg class="ico"><use href="#i-truck"/></svg><span>הובלה בטוחה ומסודרת</span></li><li><svg class="ico"><use href="#i-shield"/></svg><span>צוות אמין ומנוסה</span></li></ul><span class="svc-link">לפרטים על הובלות <svg class="ico"><use href="#i-arrow"/></svg></span></div>
         </a>
         <a class="svc" href="#storage">
           <div class="svc-img"><img src="img/corridor.webp" alt="מסדרון מחסנים פרטיים עם דלתות צהובות" loading="lazy"></div>
