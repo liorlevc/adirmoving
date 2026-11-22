@@ -207,10 +207,9 @@ p{margin:0}
 .unit .btn{margin-top:auto;min-height:44px}
 
 /* Logos */
-.logos{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media (min-width:640px){.logos{grid-template-columns:repeat(3,1fr)}}
-@media (min-width:640px){.logos{grid-template-columns:repeat(4,1fr)}}
-@media (min-width:1000px){.logos{grid-template-columns:repeat(7,1fr)}}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;--n:2}.logos .client{flex:0 0 calc((100% - (var(--n) - 1) * 10px) / var(--n))}
+@media (min-width:640px){.logos{--n:3}}
+@media (min-width:1000px){.logos{--n:5}}
 .txt-mark{font-family:var(--f-display);font-size:1.7rem;color:var(--ink);line-height:1}
 .client{margin:0;height:132px;border-radius:14px;background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:14px 10px}
 .client img{max-height:62px;max-width:86%;width:auto;height:auto;object-fit:contain}
@@ -572,9 +571,11 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
       <div class="logos" id="logos">
         <figure class="client"><img src="img/cl_azorim.svg" alt="אזורים"><figcaption>אזורים</figcaption></figure>
         <figure class="client"><img src="img/cl_israelcanada.svg" alt="ישראל קנדה"><figcaption>ישראל קנדה</figcaption></figure>
-        <figure class="client"><img src="img/cl_shikun.webp" alt="שיכון ובינוי"><figcaption>שיכון ובינוי</figcaption></figure>
+        <figure class="client"><img src="img/cl_boh.webp" alt="בוני התיכון"><figcaption>בוני התיכון</figcaption></figure>
         <figure class="client"><img src="img/cl_dimri.webp" alt="דמרי"><figcaption>דמרי</figcaption></figure>
         <figure class="client"><img src="img/cl_yuvalim.webp" alt="קבוצת יובלים"><figcaption>קבוצת יובלים</figcaption></figure>
+        <figure class="client"><img src="img/cl_etzhashaked.svg" alt="עץ השקד"><figcaption>עץ השקד</figcaption></figure>
+        <figure class="client"><img src="img/cl_doral.svg" alt="דוראל"><figcaption>דוראל</figcaption></figure>
         <figure class="client"><img src="img/cl_modiin.svg" alt="סמל עיריית מודיעין-מכבים-רעות"><figcaption>עיריית מודיעין-מכבים-רעות</figcaption></figure>
         <figure class="client"><img src="img/cl_beeryaakov.webp" alt="סמל עיריית באר יעקב"><figcaption>עיריית באר יעקב</figcaption></figure>
       </div>
