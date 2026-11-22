@@ -192,7 +192,8 @@ p{margin:0}
 .split-vid{display:grid;gap:8px}.split-vid.wide{max-width:960px;margin-inline:auto}
 .wh-video{width:100%;aspect-ratio:16/9;border-radius:var(--r);background:#000;display:block;box-shadow:var(--shadow)}
 .pol-link{color:var(--blue,#1E6FE6);font-weight:600;text-decoration:underline;white-space:nowrap}
-.vid-cap{font-size:.85rem;color:var(--muted);text-align:center}
+.play-btn{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:0;background:var(--grad);color:#fff;cursor:pointer;vertical-align:middle;margin-inline-start:4px;box-shadow:0 2px 8px rgba(30,111,230,.35)}.play-btn svg{margin-inline-start:2px}
+.vid-cap{font-size:.95rem;color:var(--muted);text-align:center;display:flex;align-items:center;justify-content:center;gap:4px}
 .checks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .checks li{display:flex;gap:10px;align-items:flex-start}
 .checks li .ico{color:var(--ok);margin-top:3px;width:20px;height:20px}
@@ -537,7 +538,7 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
 
   <div class="section">
     <div class="wrap split">
-      <div class="split-vid"><video class="wh-video" controls playsinline preload="none" poster="img/warehouse_poster.webp"><source src="img/warehouse.mp4" type="video/mp4">הדפדפן שלכם לא תומך בניגון וידאו.</video><p class="vid-cap">סיור במחסן בלחיצה על פליי ▶</p></div>
+      <div class="split-vid"><video class="wh-video" controls playsinline preload="none" poster="img/warehouse_poster.webp"><source src="img/warehouse.mp4" type="video/mp4">הדפדפן שלכם לא תומך בניגון וידאו.</video><p class="vid-cap">סיור במחסן בלחיצה על <button type="button" class="play-btn" aria-label="ניגון הסרטון" onclick="this.closest('.split-vid').querySelector('video').play()"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></p></div>
       <div class="stack">
         <span class="eyebrow">אחסנה</span>
         <h2>בין דירה לדירה? התכולה אצלנו.</h2>
@@ -703,7 +704,7 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
   <div class="section" style="padding-bottom:0">
     <div class="wrap">
       <div class="sec-head"><span class="eyebrow">סיור במחסן</span><h2>ככה נשמרת התכולה שלכם</h2><p class="lead">מבנה סגור ומאובטח, מערכות גילוי אש, מצלמות ואזעקה 24/7. צפו בסרטון הקצר.</p></div>
-      <div class="split-vid wide"><video class="wh-video" controls playsinline preload="none" poster="img/warehouse_poster.webp"><source src="img/warehouse.mp4" type="video/mp4">הדפדפן שלכם לא תומך בניגון וידאו.</video><p class="vid-cap">סיור במחסן בלחיצה על פליי ▶</p></div>
+      <div class="split-vid wide"><video class="wh-video" controls playsinline preload="none" poster="img/warehouse_poster.webp"><source src="img/warehouse.mp4" type="video/mp4">הדפדפן שלכם לא תומך בניגון וידאו.</video><p class="vid-cap">סיור במחסן בלחיצה על <button type="button" class="play-btn" aria-label="ניגון הסרטון" onclick="this.closest('.split-vid').querySelector('video').play()"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></p></div>
     </div>
   </div>
 
