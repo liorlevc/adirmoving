@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://adirmoving.onrender.com/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MovingCompany", "name": "אדיר שירותי הובלות ואחסנה", "url": "https://adirmoving.onrender.com/", "telephone": "+972-54-383-8376", "image": "https://adirmoving.onrender.com/og.jpg", "logo": "https://adirmoving.onrender.com/img/logo.webp", "founder": "אדיר סקורי", "areaServed": ["תל אביב", "רמת גן", "גבעתיים", "בני ברק", "פתח תקווה", "קריית אונו", "ראש העין", "שוהם", "ראשון לציון", "רחובות", "נס ציונה", "הרצליה", "רמת השרון", "רעננה", "כפר סבא", "הוד השרון"], "openingHours": ["Su-Th 08:00-18:00", "Fr 08:00-14:00"], "priceRange": "₪₪", "sameAs": ["https://www.pro.co.il/moving-companies/business-id-17699"]}</script>
 <title>אדיר שירותי הובלות ואחסנה | הובלות דירה ואחסנת תכולה</title>
-<meta name="description" content="אדיר שירותי הובלות ואחסנה: הובלות דירה ומשרדים, אחסנת תכולה, אריזה, נגר מקצועי והנדימן בגוש דן, השרון והשפלה. מעל 15 שנות ניסיון, דירוג 4.8. הצעת מחיר בוואטסאפ.">
+<meta name="description" content="אדיר שירותי הובלות ואחסנה: הובלות דירה ומשרדים, אחסנת תכולה, אריזה, נגר מקצועי והנדימן בגוש דן, השרון והשפלה. מעל 15 שנות ניסיון, דירוג 4.9 בגוגל. הצעת מחיר בוואטסאפ.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&family=IBM+Plex+Sans+Hebrew:wght@400;500;600;700&family=Heebo:wght@900&display=swap">
@@ -209,7 +209,9 @@ p{margin:0}
 /* Logos */
 .logos{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 @media (min-width:640px){.logos{grid-template-columns:repeat(3,1fr)}}
-@media (min-width:1000px){.logos{grid-template-columns:repeat(6,1fr)}}
+@media (min-width:640px){.logos{grid-template-columns:repeat(4,1fr)}}
+@media (min-width:1000px){.logos{grid-template-columns:repeat(7,1fr)}}
+.txt-mark{font-family:var(--f-display);font-size:1.7rem;color:var(--ink);line-height:1}
 .client{margin:0;height:132px;border-radius:14px;background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:14px 10px}
 .client img{max-height:62px;max-width:86%;width:auto;height:auto;object-fit:contain}
 .client figcaption{font-size:.8rem;color:var(--muted);font-weight:500;text-align:center;line-height:1.2}
@@ -232,6 +234,8 @@ p{margin:0}
 .reviews{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;margin-inline:calc(-1 * var(--gut-l)) calc(-1 * var(--gut-r));padding-inline:var(--gut-r) var(--gut-l);scrollbar-width:thin}
 .review{flex:0 0 min(86%,340px);scroll-snap-align:start;background:var(--card);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow)}
 @media (min-width:1000px){.reviews{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible;margin-inline:0;padding-inline:0}.review{flex:auto}}
+.rv-more{display:none}
+@media (min-width:1000px){.reviews:not(.all) .review:nth-child(n+7){display:none}.rv-more{display:inline-flex}.reviews.all~.hero-ctas .rv-more{display:none}}
 .rv-top{display:flex;align-items:center;gap:10px}
 .avatar{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;flex:none}
 .rv-name{font-weight:600;line-height:1.2}
@@ -477,7 +481,7 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
           <a class="btn btn-ghost" data-tel href="#"><svg class="ico"><use href="#i-phone"/></svg>חייגו <span data-phone class="ltr"></span></a>
         </div>
         <div class="chips">
-          <a class="chip" href="#home-reviews" data-scroll style="text-decoration:none"><svg class="ico" style="fill:#F5A800;stroke:none"><use href="#star"/></svg>4.8 · 45 חוות דעת מאומתות</a>
+          <a class="chip" href="#home-reviews" data-scroll style="text-decoration:none"><svg class="ico" style="fill:#F5A800;stroke:none"><use href="#star"/></svg>4.9 · 59 ביקורות בגוגל</a>
           <span class="chip"><svg class="ico"><use href="#i-clock"/></svg>מעל 15 שנות ניסיון</span>
           <span class="chip"><svg class="ico"><use href="#i-tools"/></svg>נגר מקצועי בצוות</span>
         </div>
@@ -563,15 +567,16 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
       <div class="sec-head">
         <span class="eyebrow">ממליצים עלינו</span>
         <h2>בין לקוחותינו</h2>
-        <p class="lead">חברות בנייה, רשויות מקומיות ושותפים שסומכים עלינו בהובלה ובאחסנה.</p>
+        <p class="lead">חברות בנייה ורשויות מקומיות שסומכות עלינו בהובלה ובאחסנה.</p>
       </div>
       <div class="logos" id="logos">
-        <figure class="client"><img src="img/cl_dimri.webp" alt="דמרי"><figcaption>דמרי</figcaption></figure>
+        <figure class="client"><img src="img/cl_azorim.svg" alt="אזורים"><figcaption>אזורים</figcaption></figure>
+        <figure class="client"><img src="img/cl_israelcanada.svg" alt="ישראל קנדה"><figcaption>ישראל קנדה</figcaption></figure>
         <figure class="client"><img src="img/cl_shikun.webp" alt="שיכון ובינוי"><figcaption>שיכון ובינוי</figcaption></figure>
-        <figure class="client"><span class="tv-mark">תוביל אותי</span><figcaption>אפליקציית ההובלות</figcaption></figure>
-        <figure class="client"><img src="img/cl_rg.webp" alt="סמל עיריית רמת גן"><figcaption>עיריית רמת גן</figcaption></figure>
-        <figure class="client"><img src="img/cl_pt.webp" alt="סמל עיריית פתח תקווה"><figcaption>עיריית פתח תקווה</figcaption></figure>
-        <figure class="client"><img src="img/cl_jlm.webp" alt="סמל עיריית ירושלים"><figcaption>עיריית ירושלים</figcaption></figure>
+        <figure class="client"><img src="img/cl_dimri.webp" alt="דמרי"><figcaption>דמרי</figcaption></figure>
+        <figure class="client"><span class="txt-mark">יובלים</span><figcaption>יובלים</figcaption></figure>
+        <figure class="client"><img src="img/cl_modiin.svg" alt="סמל עיריית מודיעין-מכבים-רעות"><figcaption>עיריית מודיעין-מכבים-רעות</figcaption></figure>
+        <figure class="client"><img src="img/cl_beeryaakov.webp" alt="סמל עיריית באר יעקב"><figcaption>עיריית באר יעקב</figcaption></figure>
       </div>
     </div>
   </div>
@@ -583,17 +588,13 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
         <h2>מה הלקוחות כותבים עלינו</h2>
       </div>
       <div class="g-summary">
-        <span class="g-score">4.8</span>
-        <div><span class="stars" id="gStars"></span><div class="rv-meta">45 חוות דעת מאומתות באתר המקצוענים</div></div>
-        <div class="dist" aria-label="התפלגות הדירוגים">
-          <div><span>5★</span><i><b style="width:82%"></b></i><span>82%</span></div>
-          <div><span>4★</span><i><b style="width:16%"></b></i><span>16%</span></div>
-          <div><span>3★</span><i><b style="width:2%"></b></i><span>2%</span></div>
-        </div>
+        <span class="g-score">4.9</span>
+        <div><span class="stars" id="gStars"></span><div class="rv-meta"><svg class="g-logo" style="width:16px;height:16px;vertical-align:-3px"><use href="#g"/></svg> 59 ביקורות בגוגל מפות</div></div>
       </div>
 <div class="reviews" id="reviews"></div>
       <div class="hero-ctas mt">
-        <a class="btn btn-ink" data-pro href="#" target="_blank" rel="noopener">לכל 45 חוות הדעת</a>
+        <button type="button" class="btn btn-ghost rv-more" onclick="document.getElementById('reviews').classList.add('all')">עוד ביקורות</button>
+        <a class="btn btn-ink" href="https://www.google.com/maps?cid=4344487792582518873" target="_blank" rel="noopener">לכל 59 הביקורות בגוגל</a>
         <a class="btn btn-ghost" data-greview href="#" target="_blank" rel="noopener"><svg class="g-logo" style="width:20px;height:20px"><use href="#g"/></svg>כתבו לנו ביקורת בגוגל</a>
       </div>
     </div>
@@ -1172,13 +1173,105 @@ $('#closeDrawer').addEventListener('click', closeDrawer);
 /* Logos (placeholders) */
 
 /* Reviews (sample) */
-const REVIEWS = [   // חוות דעת אמיתיות מאתר המקצוענים
-  {n:"סיגלית", p:"יהוד", t:"ספטמבר 2026", r:5, c:"#1E6FE6", x:"צוות מושלם , תיקתקו את העבודה במקצועיות ועמדו בזמנים. היו יעילים באריזה וקשובים לכל בקשה."},
-  {n:"אלין שם טוב", p:"פתח תקווה", t:"יולי 2026 · דירת 4 חדרים", r:5, c:"#2BB5D9", x:"מובילים מקצועיים ואדיבים. שירות מעולה!"},
-  {n:"מתתיהו", p:"בת ים", t:"ספטמבר 2026", r:5, c:"#16202B", x:"מקצוענים לענין."}
-];
+const REVIEWS = [
+{
+"n": "Or Zorsky",
+"x": "חייבת להמליץ מכל הלב על אדיר והצוות שלו! ❤ כבר מהפעם הראשונה שדיברתי עם אדיר, אחרי שדיברתי עם כמה מקומות כדי לקבל הצעות מחיר, הוא שידר מקצועיות ונעימות, אפילו חמימות וכבר ידעתי שאבחר בו. גם המחיר שלו היה מעולה ביחס לשאר, והוא הצליח למצוא לי זמינות בהתראה קצרה ועוד ב-1.9, כשהכול לחוץ ועמוס אצל כולם. …",
+"c": "#1E6FE6"
+},
+{
+"n": "ארז ביסה",
+"x": "אם אתם מחפשים חברת הובלות ואחסנה ברמה הכי גבוהה שיש – אדיר והצוות שלו הם הבחירה הנכונה. מהרגע הראשון קיבלנו שירות מקצועי, אדיב ואמין. הצוות הגיע בדיוק בזמן, עבד בצורה מסודרת, שמר על כל הרהיטים והציוד כאילו היו שלהם, והכול בוצע במהירות ובזהירות בלי שום נזק. גם שירותי האחסנה היו ברמה גבוהה – מקום נקי, מסודר ובטוח, מה שנתן לנו שקט נפשי לאורך כל התהליך. הכי בלטו היושר, הזמינות, היחס האישי והתחושה שיש על מי לסמוך. …",
+"c": "#2BB5D9"
+},
+{
+"n": "עמית אבקסיס",
+"x": "אדיר טיפל לי בהובלה דחופה בתור מילואימניק של דירה בתל אביב, תוך שעתיים היינו אחרי העמסה ופריקה בדירה החדשה. צוות מדהים מקצועי שמתייחס לציוד בעדינות כולל פירוק והרכבה של מה שצריך. ממליץ בחום לכל מי שצריך הובלה, 10/10",
+"c": "#16202B"
+},
+{
+"n": "Leeor Goshen",
+"x": "הספיקה שיחת טלפון קצרה עם אדיר כדי להבין שמדובר בסטנדרט ברמה אחרת, וביום ההובלה הצוות הצליח להתעלות על הרושם הראשוני שכבר היה מצוין ולתת חווית שירות מעל המצופה! עבדו יעיל, מקצועי ועם חיוך וסבלנות! המחיר סופר סביר ואפשרויות התשלום נוחות, 2 שכנים כבר קיבלו את המספר! מומלץ!!!",
+"c": "#178A45"
+},
+{
+"n": "Dalit Shemesh",
+"x": "המקצוענות ניכרה מהשיחה הראשונה - שאלות ממוקדות וענייניות, תכנון לפרטים. אדיר היה זמין לשאלות. הצוות שהגיע להוביל - דירת 4 חדרים עם הרבה ציוד - היה אדיב, שירותי מאוד, מרגיע, עבדו יפה (וקשה!) והכל עבר ללא תקלות",
+"c": "#8A5E2C"
+},
+{
+"n": "Eliad Elgrabli",
+"x": "עשו לנו הובלת משרד ברמה הכי גבוהה שיש. אדיר ניהל את הכל מא' ועד ת'. לוגיסטיקה מורכבת של עשרות עמדות עבודה, ציוד רגיש ומסכים, הכל עבר בלי שריטה. מקצוענים אמיתיים.",
+"c": "#EF4444"
+},
+{
+"n": "מילי ישראל",
+"x": "פשוט אלופים! סגרתי עם אדיר הובלה של הרגע האחרון לדירת 3 חדרים והוא פשוט הציל אותי. הצוות הגיע בזמן, עבדו בשקט ובזריזות ועטפו כל רהיט. המחיר היה בדיוק מה שסיכמנו בטלפון. ממליץ בחום.",
+"c": "#1E6FE6"
+},
+{
+"n": "Ivetta Vapniar",
+"x": "וואו איזו חוויה מתקנת! אחרי הובלות סיוט שעברתי בעבר, הגעתי לאדיר דרך המלצה של חברה והם פשוט רמה אחרת. הם הגיעו מצוידים בהכול, פירקו והרכיבו את הארון הגדול בחדר שינה בצורה מושלמת. הכול בחיוך, באנרגיות טובות.. ממש הרגשתי שיש על מי לסמוך, תודה רבה לכם!",
+"c": "#2BB5D9"
+},
+{
+"n": "כוכב אלמליח",
+"x": "הצוות של אדיר עשה עבודה מצוינת בהובלה שלנו. הם הגיעו בזמן, היו מקצועיים מאוד והצליחו להרגיע אותי בתקופה די לחוצה. בהחלט חוזר אליהם בפעם הבאה!",
+"c": "#16202B"
+},
+{
+"n": "Liav אהרון",
+"x": "עבודה כזו מקצועית לא ראיתי הרבה זמן! אדיר והצוות שלו היו זמינים לכל שאלה ודאגו להובלה חלקה. המחיר היה בהחלט סביר עבור איכות כזו. ממליץ.",
+"c": "#178A45"
+},
+{
+"n": "Jonatan 89",
+"x": "שירות מהשורה הראשונה. אדיר והצוות שלו הגיעו בדיוק בזמן והיו מקצועיים. הארגון והסבלנות שלהם עשו את המעבר לחוויה הרבה יותר קלה. בהחלט אמשיך לעבוד איתם.",
+"c": "#8A5E2C"
+},
+{
+"n": "נוי רוקשטיין",
+"x": "סיימתי הובלת משרד עם אדיר, זה היה תהליך מאוד מורכב, אבל הם התמודדו עם הכל בצורה מדהימה! אין עליכםםם!!!",
+"c": "#EF4444"
+},
+{
+"n": "איילת סבאן",
+"x": "חוויה מצוינת באמת! הצוות של אדיר היה סופר מקצועי, והיו מאוד סבלנים לשאלות שלי. אין לי ספק שאבחר בהם שוב להובלה הבאה שלי!",
+"c": "#1E6FE6"
+},
+{
+"n": "עדי מזרחי",
+"x": "שירות אדיר! הצוות היה פנומנלי, דאגו לכל הפרטים ואני מאוד מרוצה מהתוצאה. נהניתי מאוד מהיחס החם והמאוד קשוב!",
+"c": "#2BB5D9"
+},
+{
+"n": "Mohammed Khlaili",
+"x": "שירות יוצא דופן! אני מאוד מרוצה מההובלה שעשיתי עם אדיר. הגיעו עם חיוך ועשו את כל העבודה ביעילות ובאיכות מרשימה.",
+"c": "#16202B"
+},
+{
+"n": "daniel yakov",
+"x": "ממליץ בחום על אדיר שירותי הובלות! הם הגיעו בזמן, והיו מאוד מקצועיים. כל התהליך היה מהנה ובעיקר נעים! ❤",
+"c": "#178A45"
+},
+{
+"n": "Eitan tidhar",
+"x": "ההובלה עם אדיר הייתה חוויה רגועה ומקצועית. אני ממליץ עליו מכל הלב. השירות והאדיבות של הצוות באמת מרשימים.",
+"c": "#8A5E2C"
+},
+{
+"n": "כרמל דודקביץ",
+"x": "שירות מהיר ויעיל! ממש מסייעים בתקופה לחוצה כמו הובלה ואני מאוד שמחה שבחרתי באדיר. הוא והמובילים היו נהדרים!",
+"c": "#EF4444"
+},
+{
+"n": "Hila agiv",
+"x": "לכל מי שזקוק לשירותי הובלה מקצועיים, אדיר הוא הבחירה המושלמת. הם יודעים לתת שירות ברמה גבוהה ואדיבה, וכל ציוד הגיע במקרה מעולה!",
+"c": "#1E6FE6"
+}
+];   // ביקורות אמיתיות מגוגל מפות (5 כוכבים)
 const star = '<svg><use href="#star"/></svg>';
-$('#reviews').innerHTML = REVIEWS.map(r => `<article class="review"><div class="rv-top"><span class="avatar" style="background:${r.c}">${r.n.trim()[0]}</span><div><div class="rv-name">${r.n}, ${r.p}</div><div class="rv-meta">${r.t}</div></div></div><span class="stars" aria-label="${r.r} כוכבים">${star.repeat(r.r)}</span><p>${r.x}</p><span class="src"><svg class="ico" style="width:14px;height:14px;color:var(--ok)"><use href="#i-check"/></svg>חוות דעת מאומתת · המקצוענים</span></article>`).join('');
+$('#reviews').innerHTML = REVIEWS.map(r => `<article class="review"><div class="rv-top"><span class="avatar" style="background:${r.c}">${r.n.trim()[0].toUpperCase()}</span><div><div class="rv-name">${r.n}</div><div class="rv-meta">ביקורת בגוגל מפות</div></div><svg class="g-logo"><use href="#g"/></svg></div><span class="stars" aria-label="5 כוכבים">${star.repeat(5)}</span><p>${r.x}</p></article>`).join('');
 $('#gStars').innerHTML = star.repeat(5);
 
 /* FAQ */
