@@ -24,7 +24,7 @@ PAGES = {
             "name": "אדיר שירותי הובלות ואחסנה — מחסן להשכרה",
             "url": f"{SITE}/storage/",
             "telephone": "+972-54-383-8376",
-            "image": f"{SITE}/img/corridor.webp",
+            "image": f"{SITE}/img/hero_warehouse.webp",
             "priceRange": "החל מ-13 ₪ ליום",
             "address": {"@type": "PostalAddress", "addressLocality": "ראש העין", "addressCountry": "IL"},
             "areaServed": ["ראש העין", "פתח תקווה", "שוהם", "אלעד", "יהוד", "מודיעין", "כפר סבא", "הוד השרון", "רעננה", "הרצליה", "תל אביב", "רמת גן", "גבעתיים", "בני ברק", "קריית אונו", "ראשון לציון"],
